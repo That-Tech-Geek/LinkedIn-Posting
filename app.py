@@ -60,7 +60,7 @@ if st.button("Generate Essay"):
                 f"Write a post for {platform} on {topic}"
                 f"Use simple, confident language that shows solid understanding. "
                 f"Make the essay as comprehensive and detailed as possible."
-                f"here are some statistics I believe you'll need:".join(statistics)
+                f"Add SEO-optimised keywords to the post too"
             )
             response = model.generate_content(prompt)
 
