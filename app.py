@@ -8,8 +8,7 @@ google_search_api_key = "AIzaSyAf_74VcMcZu0tZ0B1VJ-T67qTb_vA28ZE"
 google_cse_id = "10a125a1f8ed84071"
 
 # Streamlit App Title and Description
-st.title("Essay Generator with Google Generative AI")
-st.write("Enter a topic, and this app will generate a detailed essay for you.")
+st.title("Post Generation Software")
 
 # Input for the topic
 platform = st.text_input("Enter the social media post to write for")
