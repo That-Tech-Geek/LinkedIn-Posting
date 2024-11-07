@@ -12,7 +12,8 @@ st.title("Essay Generator with Google Generative AI")
 st.write("Enter a topic, and this app will generate a detailed essay for you.")
 
 # Input for the topic
-topic = st.text_input("Enter the social media post to write for")
+platform = st.text_input("Enter the social media post to write for")
+topic = st.text_input("Enter the topic to write for")
 
 # Function to fetch statistics related to the topic using Google Custom Search
 def fetch_statistics(topic, cse_id, api_key):
@@ -57,7 +58,7 @@ if st.button("Generate Essay"):
 
             # Generate content based on the user-defined topic, with statistics if available
             prompt = (
-                f"Write a post for {topic} "
+                f"Write a post for {platform} on {topic}"
                 f"Use simple, confident language that shows solid understanding. "
                 f"Make the essay as comprehensive and detailed as possible."
                 f"here are some statistics I believe you'll need:".join(statistics)
